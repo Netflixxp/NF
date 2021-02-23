@@ -83,7 +83,7 @@ export LANGUAGE="en_US";
 export LC_ALL="en_US";
 clear;
 echo -e " ** 本脚本来源于互联网，仅供测试使用";
-echo -e "\033[31mBug购买合租奈飞 https://is.gd/DyeEc6\033[0m";
+echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
 
 curl -V > /dev/null 2>&1;
 if [ $? -ne 0 ];then
