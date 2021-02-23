@@ -26,6 +26,7 @@ function test_ipv4() {
     
     if [[ "$result1" == *"page-404"* ]] && [[ "$result2" == *"page-404"* ]] && [[ "$result3" == *"page-404"* ]] && [[ "$result4" == *"page-404"* ]] && [[ "$result5" == *"page-404"* ]] && [[ "$result6" == *"page-404"* ]];then
         echo -e "\033[33m你的IP可以打开Netflix 但是仅解锁自制剧\033[0m";
+        echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
         return;
     fi
     
@@ -36,6 +37,7 @@ function test_ipv4() {
     fi
 
     echo -e "\033[32m恭喜 你的IP可以打开Netflix 并解锁全部流媒体 区域: ${region}\033[0m";
+    echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
     return;
 }
 
@@ -43,6 +45,7 @@ function test_ipv6() {
     result=`curl -6sSL "https://www.netflix.com/" 2>&1`;
     if [ "$result" == "Not Available" ];then
         echo -e "\033[34m很遗憾 Netflix不服务此地区\033[0m";
+        echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
         return;
     fi
     
@@ -66,6 +69,7 @@ function test_ipv6() {
     
     if [[ "$result1" == *"page-404"* ]] && [[ "$result2" == *"page-404"* ]] && [[ "$result3" == *"page-404"* ]] && [[ "$result4" == *"page-404"* ]] && [[ "$result5" == *"page-404"* ]] && [[ "$result6" == *"page-404"* ]];then
         echo -e "\033[33m你的IP可以打开Netflix 但是仅解锁自制剧\033[0m";
+        echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
         return;
     fi
     
@@ -76,6 +80,7 @@ function test_ipv6() {
     fi
     
     echo -e "\033[32m恭喜 你的IP可以打开Netflix 并解锁全部流媒体 区域: ${region}\033[0m";
+    echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
     return;
 }
 export LANG="en_US";
