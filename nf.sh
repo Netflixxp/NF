@@ -25,7 +25,7 @@ function test_ipv4() {
     result6=`curl -4sL "https://www.netflix.com/title/70202589" 2>&1`;
     
     if [[ "$result1" == *"page-404"* ]] && [[ "$result2" == *"page-404"* ]] && [[ "$result3" == *"page-404"* ]] && [[ "$result4" == *"page-404"* ]] && [[ "$result5" == *"page-404"* ]] && [[ "$result6" == *"page-404"* ]];then
-        echo -e "\033[33m你的IP可以打开Netflix 但是仅解锁自制剧 区域: ${region}\033[0m";
+        echo -e "\033[33m你的IP可以打开Netflix 但是仅解锁自制剧\033[0m";
         echo -e "\033[31m购买合租奈飞 https://is.gd/DyeEc6\033[0m";
         return;
     fi
