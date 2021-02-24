@@ -32,8 +32,8 @@ function test_ipv4() {
     
     region=`tr [:lower:] [:upper:] <<< $(curl -4is "https://www.netflix.com/title/80018499" 2>&1 | sed -n '8p' | awk '{print $2}' | cut -d '/' -f4 | cut -d '-' -f1)` ;
 
-    if [[ "$region" == "INDEX" ]];then
-       region="查询失败";
+    if [[ "$region" == *"INDEX"* ]];then
+       region="US";
     fi
 
     echo -e "\033[32m恭喜 你的IP可以打开Netflix 并解锁全部流媒体 区域: ${region}\033[0m";
@@ -75,8 +75,8 @@ function test_ipv6() {
     
     region=`tr [:lower:] [:upper:] <<< $(curl -6is "https://www.netflix.com/title/80018499" 2>&1 | sed -n '8p' | awk '{print $2}' | cut -d '/' -f4 | cut -d '-' -f1)` ;
     
-    if [[ "$region" == "INDEX" ]];then
-       region="查询失败";
+    if [[ "$region" == *"INDEX"* ]];then
+       region="US";
     fi
     
     echo -e "\033[32m恭喜 你的IP可以打开Netflix 并解锁全部流媒体 区域: ${region}\033[0m";
