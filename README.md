@@ -5,7 +5,7 @@
 
 **请执行以下一键脚本即可**
 
-    yum install -y curl jq 2> /dev/null || apt install -y curl jq && bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/NF/main/nf.sh)
+    bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/NF/main/nf.sh)
 
 
 原作者：[@CoiaPrant][1] [@zerocloud][2]
