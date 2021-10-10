@@ -18,8 +18,7 @@ LOG_FILE="check.log";
 clear;
 echo -e "流媒体解锁测试" && echo -e "流媒体解锁测试" > ${LOG_FILE};
 echo -e "${Font_Purple}提示 本工具测试结果仅供参考，请以实际使用为准${Font_Suffix}" && echo -e "提示 本工具测试结果仅供参考，请以实际使用为准" >> ${LOG_FILE};
-echo -e "${Font_Purple}流媒体合租平台 https://jcnf.xyz/nf${Font_Suffix}" && echo -e "流媒体合租平台 https://jcnf.xyz/nf" >> ${LOG_FILE};
-echo -e "${Font_Purple}国家代码 http://www.loglogo.com/front/countryCode/${Font_Suffix}" && echo -e "国家代码 http://www.loglogo.com/front/countryCode/" >> ${LOG_FILE};
+echo -e "${Font_Yellow}流媒体合租平台 https://jcnf.xyz/nf${Font_Suffix}" && echo -e "流媒体合租平台 https://jcnf.xyz/nf" >> ${LOG_FILE};
 echo -e " ** 当前版本: v${shell_version}" && echo -e " ** 当前版本: v${shell_version}" >> ${LOG_FILE};
 echo -e " ** 系统时间: $(date)" && echo -e " ** 系统时间: $(date)" >> ${LOG_FILE};
 
